@@ -5,6 +5,7 @@ from .models import Todo
 class TodoAdmin(admin.ModelAdmin):
     list_display = ['author', 'text']
 
+
 admin.site.register(Todo, TodoAdmin)
 
 # Note to self, alternative way of registering to admin
