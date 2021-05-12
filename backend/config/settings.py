@@ -140,7 +140,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'  # Custom user model
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny'
+        'rest_framework.permissions.IsAuthenticated',
     ]
 }
 
