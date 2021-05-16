@@ -3,7 +3,8 @@ from .models import Todo
 
 
 class TodoAdmin(admin.ModelAdmin):
-    list_display = ['author', 'text']
+    list_display = ['author', 'text', 'order']
+    ordering = ['author', 'order']
 
 
 admin.site.register(Todo, TodoAdmin)
